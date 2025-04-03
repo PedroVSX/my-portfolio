@@ -1,20 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    margin: 0;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     // Color variables:
     --title-color: #FFFFFF;
     --description-color: #757575;
     
     // Fonts:
-    font-family: 'Rubik';
+    font-family: 'Inter';
 
     button {
         padding: 10px;
         height: 40px;
         border-radius: 10px;
-        font-family: 'Rubik';
+        font-family: 'Inter';
         cursor: pointer;
         transition: background-color, color 0.3s ease;
     }
