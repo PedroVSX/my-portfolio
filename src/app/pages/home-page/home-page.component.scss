@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .apresentation {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .my-name {
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .my-description {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--description-color);
+        }
+
+        .apresentation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            .contact-btn {
+                border: 0;
+                background-color: #000000;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #404040;
+                }
+            }
+
+            .projects-btn {
+                border: solid #ddd 1px;
+                background-color: #FFFFFF;
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+}
