@@ -6,17 +6,20 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding: 200px;
+        border-bottom: solid #ccc 1px;
 
         .my-name {
             display: flex;
             justify-content: center;
             font-size: 60px;
+            font-weight: bold;
         }
 
         .my-description {
             display: flex;
             justify-content: center;
-            font-size: 24px;
+            font-size: 20px;
             color: var(--description-color);
         }
 
@@ -24,6 +27,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            margin-top: 20px;
 
             .contact-btn {
                 border: 0;
@@ -43,6 +47,58 @@
                     background-color: #ddd;
                 }
             }
+        }
+    }
+
+    .about-me {
+        display: flex;
+        width: 100%;
+        padding: 100px;
+        justify-content: center;
+        gap: 200px;
+
+        .photo {
+            width: 400px;
+            height: 400px;
+            background-color: #ddd;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: 400px;
+            gap: 20px;
+            justify-content: center;
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                color: var(--description-color);
+            }
+
+            .resume-btn {
+                width: fit-content;
+                border: 0;
+                background-color: #000000;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #404040;
+                }
+            }
+        }
+    }
+
+    .my-projects {
+
+        .section-title {
+            display: flex;
+            font-size: 32px;
+            font-weight: bold;
+            justify-content: center;
         }
     }
 }
