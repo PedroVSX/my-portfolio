@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    border: solid #ddd 1px;
+    background-color: #fff;
+
+    .project-image {
+        user-select: none;
+        width: 100%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+        }
+    }
+
+    .project-info-container {
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        padding: 16px;
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 18px;
+
+            h2 {
+                font-size: 20px;
+                height: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                height: 40px;
+                color: var(--description-color);
+                display: -webkit-box;
+                -webkit-line-clamp: 2; // número de linhas a exibir
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    
+        .project-technologies {
+            display: flex;
+            height: 20px;
+            gap: 8px;
+            margin-bottom: 18px;
+    
+            .technologies {
+                color: #FFF;
+                background-color: #000;
+                border-radius: 10px;
+                font-size: 12px;
+                padding: 2px 5px;
+            }
+        }
+    
+        .project-buttons {
+            display: flex;
+            gap: 5px;
+
+            .repository {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: 0;
+                color: #fff;
+                background-color: #000;
+
+                &:hover {
+                    background-color: #404040;
+                }
+
+                .icon {
+                    font-size: 20px;
+                }
+            }
+
+            .demo {
+                border: solid #ddd 1px;
+                color: #000;
+                background-color: #fff;
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+}
