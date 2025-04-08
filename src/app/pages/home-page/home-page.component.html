@@ -30,5 +30,10 @@
 
     <div class="my-projects">
         <div class="section-title">Meus Projetos</div>
+        <div class="projects-container">
+            <div class="projects-wrapper" *ngFor="let project of projects">
+                <app-project-card [project]="project"></app-project-card>
+            </div>
+        </div>
     </div>
 </div>
