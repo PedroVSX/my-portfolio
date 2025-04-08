@@ -11,5 +11,9 @@ export const routes: Routes = [
     {
         path: 'header',
         loadComponent: () => import('./components/header/header.component').then(m => m.HeaderComponent)
+    },
+    {
+        path: 'project-card',
+        loadComponent: () => import('./components/project-card/project-card.component').then(m => m.ProjectCardComponent)
     }
 ];
